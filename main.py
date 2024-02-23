@@ -17,6 +17,7 @@ def read_words(text):
 
 def read_letters(words):
     letters_string = str(words).lower()
+    
     letters_dict = {}
     for char in letters_string:
         if char in letters_dict:
@@ -34,7 +35,8 @@ def get_count(i):
     return i[1] 
 
 def get_report(letters_dict_tuple):
-    for i in letters_dict_tuple:
-        print(f"for the letter {i[0]}, there are {i[1]} occurences ")
+     for i in letters_dict_tuple:
+        if i[0].isalpha():
+          print(f"for the letter {i[0]}, there are {i[1]} occurences ")
 
 main()
