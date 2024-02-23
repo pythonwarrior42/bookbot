@@ -13,7 +13,7 @@ def read_words(text):
     return len(words)
 
 def read_letters(words):
-    letters_string = str(words)
+    letters_string = str(words).lower()
     letters_dict = {}
     for char in letters_string:
         if char not in letters_dict:
