@@ -1,4 +1,6 @@
 # bookbot
 This is a bookbot that performs static text analysis on files
-This is my first project in python!
-This is a test to see if git is working.
+
+
+To use this, simply replace the book path [relative to the program] with the path of the .txt file you wish to analyse.
+
