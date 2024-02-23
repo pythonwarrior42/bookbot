@@ -12,4 +12,15 @@ def read_words(text):
     words = text.split()
     return len(words)
 
+def read_letters(words):
+    letters_string = str(words)
+    letters_dict = {}
+    for char in letters_string:
+        if char not in letters_dict:
+            letters_dict[char] = 0
+            letters_dict[char] += 1
+    for key, value in letters_dict.items():
+     print (key, value   )
+
+
 main()
